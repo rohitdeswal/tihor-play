@@ -1,0 +1,111 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+
+  background-color: #f5f3ee;
+  background-image: radial-gradient(#2c2c2c 1px, transparent 1px);
+  background-size: 30px 30px;
+
+  text-align: center;
+}
+
+/* NAVBAR */
+.navbar {
+  position: fixed;
+  top: 20px;
+  left: 0;
+  right: 0;
+  margin: auto;
+
+  width: 90%;
+  max-width: 1000px;
+  height: 70px;
+
+  background: #F6F1E8;
+  border-radius: 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0 20px;
+
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.logo img {
+  height: 40px;
+}
+
+.about-btn {
+  padding: 10px 20px;
+  background: #f28c82;
+  border-radius: 14px;
+  text-decoration: none;
+  color: #3a2a2a;
+}
+
+/* GAME */
+.game-wrapper {
+  margin-top: 140px;
+}
+
+h1 {
+  color: #3a2a2a;
+}
+
+h2 {
+  color: #3a2a2a;
+}
+
+
+/* BOARD */
+.board {
+  width: 300px;
+  height: 300px;
+
+  margin: 30px auto;
+
+  display: flex;
+  flex-wrap: wrap;
+
+  background: #5f4a4a;
+  border-radius: 20px;
+  padding: 10px 0 10px 10px;
+  gap: 10px;
+
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+/* CELLS */
+.cell {
+  width: 30%;
+  height: 30%;
+
+  background: #f6f1e8 ;
+  border-radius: 10px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 2rem;
+  font-weight: bold;
+  cursor: pointer;
+
+  transition: 0.2s;
+}
+
+.cell:hover {
+  background: #ece6da;
+}
+
+/* RESET BUTTON */
+#resetBtn {
+  padding: 10px 20px;
+  background: #F4C24D;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  display: none;
+}

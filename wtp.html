@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Who's That Pokémon?</title>
+    <link rel="icon" href="assets/logo.png">
+    <link rel="stylesheet" href="wtp.css">
+</head>
+<body>
+
+    
+    <div class="navbar">
+        <a href="index.html" class="logo">
+            <img src="assets/title.png">
+        </a>
+        <a href="index.html#about" class="about-btn">About Me</a>
+    </div>
+
+    <div class="game-wrapper">
+
+        <h1>Who's That Pokémon?</h1>
+        <h2 id="h2">Press Start to Begin</h2>
+
+        
+        <div class="start-card" id="startCard">
+            <div class="icon">
+                <img src="assets/wtp.png" alt="who's that pokemon">
+            </div>
+            <p>
+                👁️ Watch the Pokémon silhouette<br>
+                ⏱️ You have <b>10 seconds</b> to guess<br>
+                💡 A hint appears at 5 seconds<br>
+                ✍️ Type the name and hit <b>Enter</b><br>
+                ❤️ You have <b>3 lives</b> — 3 wrong = Game Over!<br>
+                🏆 <b>151 Pokémon</b> — how far can you go?
+            </p>
+            <button id="startBtn">Start Game</button>
+        </div>
+
+       
+        <div class="game-container" id="gameContainer">
+
+           
+            <div class="score-bar">
+                <div class="score-box">🏆 Score <span id="score">0</span></div>
+                <div class="round-box">Round <span id="round">1</span> / 151</div>
+                <div class="streak-box"><span id="streak">❤️❤️❤️</span></div>
+            </div>
+
+
+            <div class="game-main">
+
+               
+                <div class="image-box">
+                    <div class="timer-wrap">
+                        <svg width="54" height="54" viewBox="0 0 44 44">
+                            <circle cx="22" cy="22" r="19" fill="none" stroke="#e0d8cc" stroke-width="4"/>
+                            <circle id="timerArc" cx="22" cy="22" r="19" fill="none" stroke="#F4C24D" stroke-width="4" stroke-linecap="round" stroke-dasharray="119" stroke-dashoffset="0" transform="rotate(-90 22 22)"/>
+                        </svg>
+                        <span id="timerNum">10</span>
+                    </div>
+                    <img id="pokemonImg" src="" alt="pokemon" class="silhouette">
+                    <div id="hintText"></div>
+                </div>
+
+            
+                <div class="controls">
+                    <div id="resultText"></div>
+                    <input type="text" id="guessInput" placeholder="Type Pokémon name..." list="pokemonList">
+                    <datalist id="pokemonList"></datalist>
+                    <button id="guessBtn">Submit Guess</button>
+                    <button id="nextBtn">Next Pokémon →</button>
+                </div>
+
+            </div>
+
+        </div>
+
+       
+        <div class="guide" id="guide">
+            <p>
+                🎯 <b>HOW TO PLAY</b><br><br>
+                👁️ A Pokémon silhouette appears on screen<br>
+                ✍️ Type the name in the box on the right<br>
+                ⏱️ You only have 10 seconds per Pokémon<br>
+                💡 A letter hint shows at 5 seconds<br>
+                ❤️ 3 wrong answers and the game ends<br>
+                📈 151 Pokémon total — how many can you get?
+            </p>
+        </div>
+
+    </div>
+
+    <script src="wtp.js"></script>
+
+</body>
+</html>

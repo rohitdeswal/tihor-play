@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Sorting Hat</title>
+    <link rel="icon" href="assets/logo.png">
+    <link rel="stylesheet" href="hogwarts.css">
+</head>
+<body>
+
+    <div class="navbar">
+        <a href="index.html" class="logo">
+            <img src="assets/title.png">
+        </a>
+        <a href="index.html#about" class="about-btn">About Me</a>
+    </div>
+
+    <div class="game-wrapper">
+
+        <h1>The Sorting Hat 🎩</h1>
+        <h2 id="h2">Where shall you belong?</h2>
+
+       
+        <div class="start-card" id="startCard">
+            <div class="icon">
+                <img src="assets/hogwarts.png" alt="hogwarts crest">
+            </div>
+            <p>
+                🎩 The Sorting Hat will ask you <b>10 questions</b><br>
+                🏰 Each answer brings you closer to your house<br>
+                ⚡ Answer honestly — the Hat knows all!<br>
+                🦁 🐍 🦡 🦅 Which house awaits you?
+            </p>
+            <button id="startBtn">Begin Sorting</button>
+        </div>
+
+        
+        <div class="quiz-area" id="quizArea">
+
+            <div class="progress-bar">
+                <div class="progress-fill" id="progressFill"></div>
+            </div>
+            <div class="progress-text" id="progressText">Question 1 of 10</div>
+
+            <div class="question-card" id="questionCard">
+                <p class="question-text" id="questionText"></p>
+                <div class="options" id="options"></div>
+            </div>
+
+        </div>
+
+       
+        <div class="result-card" id="resultCard">
+            <div class="result-crest" id="resultCrest"></div>
+            <h2 id="resultHouse"></h2>
+            <p id="resultMsg"></p>
+            <div class="scores" id="scores"></div>
+            <button id="retryBtn">Sort Again 🎩</button>
+        </div>
+
+        <div class="guide" id="guide">
+            <p>
+                🎯 <b>HOW IT WORKS</b><br><br>
+                🎩 The Sorting Hat asks you 10 questions<br>
+                🖱️ Pick the answer that feels most like you<br>
+                🏆 Each answer adds points to a house<br>
+                🦁 The house with the most points wins<br>
+                ⚖️ Ties are broken by house priority
+            </p>
+        </div>
+
+    </div>
+
+    <script src="hogwarts.js"></script>
+
+</body>
+</html>

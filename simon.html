@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simon Game — tihor.play</title>
+    <link rel="icon" href="assets/logo.png">
+    <link rel="stylesheet" href="simon.css">
+</head>
+<body>
+    
+
+ 
+  <div class="navbar">
+    <a href="index.html" class="logo">
+      <img src="assets/title.png">
+    </a>
+
+    <a href="index.html#about" class="about-btn">About Me</a>
+  </div>
+
+  
+  <div class="game-wrapper">
+    <h1>Simon Game</h1>
+    <h2>Press Start to Begin</h2>
+
+    <button id="startBtn">Start Game</button>
+
+    <div class="game-container">
+      <div class="btn red" id="red"></div>
+      <div class="btn yellow" id="yellow"></div>
+      <div class="btn green" id="green"></div>
+      <div class="btn purple" id="purple"></div>
+    </div>
+
+    <div class="guide">
+       <p>
+        🎯 <b>HOW TO PLAY</b><br><br>
+        👀 Watch the flashing color<br>
+        🖱️ Click the same color<br>
+        🧠 A new color is added every round<br>
+        🔁 Repeat the full sequence in order<br>
+        📈 The sequence gets longer each level<br>
+        💀 One mistake = Game Over<br><br>
+        🔥 Stay focused. Beat your best score.
+        </p>
+    </div>
+  </div>
+
+  <script src="simon.js"></script>
+
+</body>
+</html>
