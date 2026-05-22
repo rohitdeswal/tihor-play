@@ -38,7 +38,7 @@ Answer magical questions and discover your Hogwarts house.
 
 # 🌐 Live Website
 
-> 
+> https://tihor-play.vercel.app/
 
 ---
 
