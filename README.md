@@ -6,6 +6,12 @@ This project is a fun little playground of classic games and interactive experie
 
 ---
 
+# 🌐 Live Website
+
+> https://tihor-play.vercel.app/
+
+---
+
 ## ✨ Games Included
 
 ### 🎵 Simon Game
@@ -33,12 +39,6 @@ Answer magical questions and discover your Hogwarts house.
 - Responsive Design
 - DOM Manipulation
 - Game Logic & State Management
-
----
-
-# 🌐 Live Website
-
-> https://tihor-play.vercel.app/
 
 ---
 
